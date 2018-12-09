@@ -1,0 +1,14 @@
+<div class="header-menu">
+    <div class="container">
+        <ul>
+            <li class="{% if this.page.id == 'address-directory' %}active{% endif %}"><a href="{{ 'address-directory'|page }}">Каталог адресов</a></li>
+            <li class="{% if this.page.id == 'services' %}active{% endif %}"><a href="{{ 'services'|page }}">Услуги</a></li>
+            <li class="{% if this.page.id == 'guarantees' %}active{% endif %}"><a href="{{ 'guarantees'|page }}">Гарантии</a></li>
+            <li class="{% if this.page.id == 'reviews' %}active{% endif %}"><a href="{{ 'reviews'|page }}">Отзывы</a></li>
+            <li class="{% if this.page.id == 'payment-delivery' %}active{% endif %}"><a href="{{ 'payment-delivery'|page }}">Оплата и доставка</a></li>
+            <li class="{% if this.page.id == 'promotions' %}active{% endif %}"><a href="{{ 'promotions'|page }}">Акции</a></li>
+            <li class="{% if this.page.id == 'about-company' %}active{% endif %}"><a href="{{ 'about-company'|page }}">О компании</a></li>
+            <li class="{% if this.page.id == 'contacts' %}active{% endif %}"><a href="{{ 'contacts'|page }}">Контакты</a></li>
+        </ul>
+    </div>
+</div>

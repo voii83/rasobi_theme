@@ -1,0 +1,23 @@
+{
+    "name": "october/rasobi",
+    "type": "october-theme",
+    "description": "Rasobi OctoberCMS theme",
+    "keywords": ["october", "cms", "rasobi", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Filippov Vladimir",
+            "email": "voiivoii83@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

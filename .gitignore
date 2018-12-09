@@ -1,0 +1,12 @@
+.idea/
+public/bootstrap
+public/config
+public/modules
+public/plugins
+public/storage
+public/themes/demo
+public/vendor
+public/.htaccess
+public/artisan
+public/index.php
+public/README.md

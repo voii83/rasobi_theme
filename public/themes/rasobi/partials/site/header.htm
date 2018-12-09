@@ -1,0 +1,75 @@
+
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top-left">
+                <ul>
+                    <li>
+                        <img src="{{'assets/images/ico-help.svg'|theme}}" alt=""><a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <img src="{{'assets/images/ico-cabinet.svg'|theme}}" alt=""> <a href="#">Кабинет</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-top-center">
+                <ul>
+                    <li>
+                        <img src="{{'assets/images/ico-16-years.svg'|theme}}" alt="">16 лет на рынке
+                    </li>
+                    <li>
+                        <img src="{{'assets/images/ico-financial.svg'|theme}}" alt="">Финансовые гарантии
+                    </li>
+                    <li>
+                        <img src="{{'assets/images/ico-100-registr.svg'|theme}}" alt="">100% регистрация
+                    </li>
+                </ul>
+            </div>
+            <div class="header-top-right">
+                <img src="{{'assets/images/ico-favorites.svg'|theme}}" alt="">Избранное: <a href="#">0 адресов</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom-logo">
+                <img src="{{'assets/images/logo.svg'|theme}}" alt="">
+            </div>
+            <div class="header-bottom-search">
+                <form action="">
+                    <input type="text" placeholder="Поиск по району или улице">
+                    <img class="ico-search" src="{{'assets/images/ico-search.svg'|theme}}" alt="">
+                    <button type="submit">найти</button>
+                </form>
+            </div>
+            <div class="header-bottom-contact">
+                <div class="header-phone">
+                    {{ this.theme.company_phone }}
+                </div>
+                <div class="header-selection">
+                    <a href="#">Подобрать юр. адрес</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% partial 'site/top-menu' %}
+
+</header>
+
+<header class="header-mobile">
+    <div class="container rel">
+        <div class="header-mobile-logo">
+            <img src="{{'assets/images/logo.svg'|theme}}" alt="">
+        </div>
+        {% partial 'site/top-menu-mobile' %}
+    </div>
+</header>
+
+<div class="container">
+    <h2 class="page-title">{{ this.page.description }}</h2>
+    <ul class="breadcrumbs">
+        <li><a href="/">Главная</a></li>
+        <li>{{ this.page.title }}</li>
+    </ul>
+</div>
