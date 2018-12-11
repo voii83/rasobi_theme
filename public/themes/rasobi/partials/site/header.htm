@@ -1,11 +1,12 @@
-
+[viewBag]
+==
 <header class="header">
     <div class="header-top">
         <div class="container">
             <div class="header-top-left">
                 <ul>
                     <li>
-                        <img src="{{'assets/images/ico-help.svg'|theme}}" alt=""><a href="#">Помощь</a>
+                        <img src="{{'assets/images/ico-help.svg'|theme}}" alt=""><a href="{{ 'faq'|app }}">Помощь</a>
                     </li>
                     <li>
                         <img src="{{'assets/images/ico-cabinet.svg'|theme}}" alt=""> <a href="#">Кабинет</a>
@@ -65,11 +66,3 @@
         {% partial 'site/top-menu-mobile' %}
     </div>
 </header>
-
-<div class="container">
-    <h2 class="page-title">{{ this.page.description }}</h2>
-    <ul class="breadcrumbs">
-        <li><a href="/">Главная</a></li>
-        <li>{{ this.page.title }}</li>
-    </ul>
-</div>

@@ -1,0 +1,103 @@
+[staticPage]
+useContent = 0
+default = 0
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% partial 'meta' %}
+</head>
+<body>
+
+<!-- Header -->
+{% partial 'site/header' %}
+
+<div class="container">
+    <h2 class="page-title">FAQ</h2>
+    <ul class="breadcrumbs">
+        <li><a href="{{ '/'|app }}">Главная</a></li>
+        <li>{{ this.page.title }}</li>
+    </ul>
+</div>
+
+<div class="main">
+    <section class="section rel">
+        <div class="container">
+            <div class="left-sidebar">
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Общие вопросы</a>
+                    </div>
+                    <div class="spoiler-content">
+                        <ul>
+                            <li><a href="#">Регистрировать предприятие на подобные адреса это законно?</a></li>
+                            <li><a href="#">Можно ли будет использовать офис для встреч?</a></li>
+                            <li><a href="#">В чем отличие массовых адресов от немассовых?</a></li>
+                            <li><a href="#">У Вас есть немассовые адреса?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по юр. адресам</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по процессу работы</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по дилерству и сотрудничеству</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по юр. адресам</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по процессу работы</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-content">
+                <div class="center-content-search">
+                    <form action="">
+                        <input type="text" placeholder="Быстрый поиск по вопросам:">
+                        <button type="submit">найти</button>
+                    </form>
+                </div>
+
+                {#
+                Что бы заработало, надо установить плагин "Static Pages": https://octobercms.com/plugin/rainlab-pages
+                Про поддерживаемые теги можно посмотреть тут: https://octobercms.com/docs/services/parser
+                #}
+                {repeater name="faq_questions" prompt="Добавить вопрос" tab="Вопросы"}
+                    {variable name="question" label="Вопрос" type="text" span="full"}{/variable}
+                    {variable name="answer" label="Ответ" type="textarea" span="full" size="small"}{/variable}
+                {/repeater}
+
+                {% for faqItem in faq_questions %}
+                <div class="center-content-item">
+                    <h3>{{ faqItem.question }}</h3>
+                    <p>{{ faqItem.answer|nl2br }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% partial 'hotline' %}
+    {% partial 'numbers' %}
+</div>
+
+<!-- Footer -->
+{% partial 'site/footer' %}
+{% partial 'scripts' %}
+
+</body>
+</html>

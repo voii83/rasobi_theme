@@ -1,0 +1,12 @@
+[viewBag]
+==
+{# Можно подключать скрипты в виде массива (css тоже так можно). Тогда они будут объединяться в один: https://octobercms.com/docs/markup/filter-theme #}
+<script src="{{ [
+    '@jquery',
+    '@framework',
+    '@framework.extras',
+    'assets/javascript/main.min.js'
+]|theme }}"></script>
+
+{# Сюда будут вставляться скрипты, если писать их через "put scripts": https://octobercms.com/docs/markup/tag-scripts #}
+{% scripts %}
