@@ -1,0 +1,53 @@
+# Можно хранить настройки в отдельном файле.
+tabs:
+    fields:
+        company_phone:
+            tab: Контакты
+            label: Телефон компании
+            comment: Введите телефон компании
+            default: 123-45-67
+            span: left
+
+        company_num_1:
+            tab: Цифры
+            label: Цифра 1
+            default: 121
+            span: left
+        company_text_1:
+            tab: Цифры
+            label: Текст 1
+            default: Тестовый текст
+            span: right
+
+        company_num_2:
+            tab: Цифры
+            label: Цифра 2
+            default: 122
+            span: left
+        company_text_2:
+            tab: Цифры
+            label: Текст 2
+            default: Тестовый текст
+            span: right
+
+        company_num_3:
+            tab: Цифры
+            label: Цифра 3
+            default: 123
+            span: left
+        company_text_3:
+            tab: Цифры
+            label: Текст 3
+            default: Тестовый текст
+            span: right
+
+        company_num_4:
+            tab: Цифры
+            label: Цифра 4
+            default: 124
+            span: left
+        company_text_4:
+            tab: Цифры
+            label: Текст 4
+            default: Тестовый текст
+            span: right
