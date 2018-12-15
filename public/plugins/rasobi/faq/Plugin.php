@@ -51,7 +51,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Rasobi\Faq\Components\Questions' => 'faq',
+            '\Rasobi\Faq\Components\Questions' => 'faq',
         ];
     }
 
