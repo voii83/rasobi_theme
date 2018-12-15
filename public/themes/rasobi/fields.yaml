@@ -6,7 +6,7 @@ tabs:
       comment: Введите телефон компании
       default: 123-45-67
       span: left
-      company_num_1:
+    company_num_1:
         tab: Цифры
         label: Цифра 1
         default: 121
@@ -16,7 +16,7 @@ tabs:
       label: Текст 1
       default: Тестовый текст
       span: right
-      company_num_2:
+    company_num_2:
         tab: Цифры
         label: Цифра 2
         default: 122
@@ -26,7 +26,7 @@ tabs:
       label: Текст 2
       default: Тестовый текст
       span: right
-      company_num_3:
+    company_num_3:
         tab: Цифры
         label: Цифра 3
         default: 123
@@ -36,7 +36,7 @@ tabs:
       label: Текст 3
       default: Тестовый текст
       span: right
-      company_num_4:
+    company_num_4:
         tab: Цифры
         label: Цифра 4
         default: 124
