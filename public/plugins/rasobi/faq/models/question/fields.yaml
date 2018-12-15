@@ -1,0 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    question:
+        label: Вопрос
+    answer:
+        label: Ответ
+        type: textarea

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Question
+
+# Model Form Field configuration
+form: $/rasobi/faq/models/question/fields.yaml
+
+# Model Class name
+modelClass: Rasobi\Faq\Models\Question
+
+# Default redirect location
+defaultRedirect: rasobi/faq/questions
+
+# Create page
+create:
+    title: Create Question
+    redirect: rasobi/faq/questions/update/:id
+    redirectClose: rasobi/faq/questions
+
+# Update page
+update:
+    title: Edit Question
+    redirect: rasobi/faq/questions
+    redirectClose: rasobi/faq/questions
+
+# Preview page
+preview:
+    title: Preview Question

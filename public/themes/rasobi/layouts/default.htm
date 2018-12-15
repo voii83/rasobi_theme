@@ -23,6 +23,13 @@ description = "Default layout"
 {% partial 'site/header' %}
 
 <div class="main">
+    <div class="container">
+        <h2 class="page-title">{{ this.page.description }}</h2>
+        <ul class="breadcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li>{{ this.page.title }}</li>
+        </ul>
+    </div>
     {% page %}
 </div>
 

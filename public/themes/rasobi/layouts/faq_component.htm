@@ -1,0 +1,87 @@
+[staticPage]
+[faq]
+useContent = 0
+default = 0
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% partial 'meta' %}
+</head>
+<body>
+<!-- Header -->
+{% partial 'site/header' %}
+<div class="container">
+    <h2 class="page-title">{{ this.page.title }}</h2>
+    <ul class="breadcrumbs">
+        <li><a href="{{ '/'|app }}">Главная</a></li>
+        <li>{{ this.page.title }}</li>
+    </ul>
+</div>
+<div class="main">
+    <section class="section rel">
+        <div class="container">
+            <div class="left-sidebar">
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Общие вопросы</a>
+                    </div>
+                    <div class="spoiler-content">
+                        <ul>
+                            <li><a href="#">Регистрировать предприятие на подобные адреса это законно?</a></li>
+                            <li><a href="#">Можно ли будет использовать офис для встреч?</a></li>
+                            <li><a href="#">В чем отличие массовых адресов от немассовых?</a></li>
+                            <li><a href="#">У Вас есть немассовые адреса?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по юр. адресам</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по процессу работы</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по дилерству и сотрудничеству</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по юр. адресам</a>
+                    </div>
+                </div>
+                <div class="spoiler-item">
+                    <div class="spoiler-title">
+                        <a href="#">Вопросы по процессу работы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-content">
+                <div class="center-content-search">
+                    <form action="">
+                        <input type="text" placeholder="Быстрый поиск по вопросам:">
+                        <button type="submit">найти</button>
+                    </form>
+                </div>
+                {% for item in faq.questions %}
+                <div class="center-content-item">
+                    <h3>{{ item.question }}</h3>
+                    <p>{{ item.answer|nl2br }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% partial 'hotline' %}
+    {% partial 'numbers' %}
+</div>
+<!-- Footer -->
+{% partial 'site/footer' %}
+{% partial 'scripts' %}
+</body>
+</html>

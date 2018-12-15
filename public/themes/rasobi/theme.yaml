@@ -3,28 +3,6 @@ description: 'Rasobi test work'
 author: Filippov V
 homepage: 'http://rasobi.local'
 code: ''
-form:
-  fields:
-    company_phone:
-      label: Телефон компании
-      comment: Введите телефон компании
-
-    company_num_1:
-      label: Цифра 1
-    company_text_1:
-      label: Текст 1
-
-    company_num_2:
-      label: Цифра 2
-    company_text_2:
-      label: Текст 2
-
-    company_num_3:
-      label: Цифра 3
-    company_text_3:
-      label: Текст 3
-
-    company_num_4:
-      label: Цифра 4
-    company_text_4:
-      label: Текст 4
+form: fields.yaml
+require:
+- Rainlab.Pages
